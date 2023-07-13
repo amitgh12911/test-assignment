@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#header-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    padding: 10px 70px;
+}
+
+#header-1 img[src="img/logo.PNG"] {
+    width: 150px;
+}
+
+#header-1 img[src="img/logo2.jpg"] {
+    width: 90px;
+    border-radius: 50%;
+}
+
+.header-contact {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.3fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.header-contact .icon {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#header-1 i {
+    font-style: normal;
+    font-family: "Font Awesome 5 Free", "FontAwesome";
+    color: blue;
+}
+
+#header-1 .country {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+}
+
+#header-1 .hamburger {
+    display: none;
+}
+
+#header-2 {
+    padding: 0 70px;
+    background-color: dodgerblue;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+#header-2 .navbar {
+    width: 100%;
+    height: 100%;
+}
+
+#header-2 .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#header-2 .navbar ul li {
+    list-style: none;
+}
+
+#header-2 .navbar ul li a {
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+#header-2 .navbar ul li:last-child {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#header-2 .navbar ul li input {
+    outline: none;
+    padding: 0 10px;
+}
+
+#header-2 .navbar ul li input,
+#header-2 .navbar ul li i {
+    height: 100%;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
+#header-2 .navbar ul li i {
+    padding-top: 17px;
+    padding-left: 10px;
+}
+
+#header-2 i {
+    font-style: normal;
+    font-family: "Font Awesome 5 Free", "FontAwesome";
+    color: black;
+    font-weight: normal;
+}
+
+#main-1 {
+    background-image: url(../img/knee.jpeg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    background-position: 0 -18vw;
+}
+
+#main-1>div {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+
+.text-red {
+    color: red;
+}
+
+#main-1>div button {
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    width: 200px;
+    border: none;
+}
+
+.two-lines {
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+    justify-content: space-between;
+}
+
+#header-3 {
+    border-bottom: 1px solid gray;
+    padding-left: 70px;
+    padding-right: 280px;
+}
+
+#header-3 ul {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-3 ul li {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#header-3 ul li:nth-child(1) {
+    border-bottom: 2px solid blue;
+}
+
+#header-3 ul li a {
+    text-decoration: none;
+}
+
+#section-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap-reverse;
+}
+
+#section-1 .content h1 span {
+    color: red;
+}
+
+#section-1 .content {
+    width: 430px;
+}
+
+#section-1 .content p {
+    margin: 30px 0;
+}
+
+.divider {
+    border: 1px dashed dodgerblue;
+    margin: 0 70px;
+}
+
+.divider-m-0 {
+    margin: 0 -30px;
+}
+
+#section-2 {
+    margin: 0 70px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 100px;
+}
+
+#section-2 main {
+    width: 50%;
+}
+
+#section-2 main p {
+    margin-top: 30px;
+}
+
+#section-2 aside form {
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#section-2 aside form h1 {
+    font-family: sans-serif;
+    color: dodgerblue;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#section-2 aside form input,
+#section-2 aside form textarea {
+    padding: 15px;
+    border: 1px solid gray;
+    outline: none;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#section-2 aside form input[type="submit"] {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.section-container:not(.section-container:nth-child(1)) {
+    padding: 50px 0;
+}
+
+ul[type="circle"] {
+    list-style-type: none;
+}
+
+ul[type="circle"] li:before {
+    content: "";
+    border: 2px solid dodgerblue;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: -1em;
+    margin-bottom: 3px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion .fields {
+    display: flex;
+    border-top: 2px solid lightgray;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion .fields:nth-last-child(2) {
+    border-bottom: 2px solid lightgray;
+}
+
+.accordion .fields span {
+    display: block;
+    color: dodgerblue;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.accordion .fields p {
+    margin-top: 0 !important;
+    font-weight: bolder;
+}
+
+.accordion .fields+.hidden-content {
+    margin-top: 0 !important;
+    margin-left: 60px;
+    border-left: 2px solid dodgerblue;
+    padding-left: 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.3s linear;
+}
+
+.accordion .fields+.expand {
+    height: 72px !important;
+    margin: 20px !important;
+    margin-top: 20px !important;
+    margin-left: 60px !important;
+}
+
+@media screen and (max-width: 1200px) {
+    #section-2 {
+        justify-content: center;
+    }
+
+    #section-2 main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    #header-1 {
+        position: relative;
+        overflow: hidden;
+        height: 70px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header div:first-child {
+        align-self: baseline;
+    }
+
+    #header-1 .hamburger {
+        display: block;
+        position: absolute;
+        right: 70px;
+        top: 25px;
+    }
+}
